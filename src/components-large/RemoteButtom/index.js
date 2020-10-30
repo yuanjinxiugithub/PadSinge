@@ -57,8 +57,8 @@ onTouchMove = (ev) => {
   if (left > clientWidth - 90) {
     left = clientWidth - 90;
   }
-  if (top > clientHeight - 170) {
-    top = clientHeight - 170;
+  if (top > clientHeight - 140) {
+    top = clientHeight - 140;
   }
   this.setState({left, top })
 }
