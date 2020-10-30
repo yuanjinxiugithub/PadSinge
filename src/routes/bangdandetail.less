@@ -1,0 +1,64 @@
+.page{
+  display: flex;
+  flex-direction: column;
+}
+.list{
+  flex: 1;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.listView{
+  flex: 1;
+  .row{
+   color: #D9BC92;
+   display: flex;
+   padding: 10px 10px;
+   width: 100vw;
+   .col1{
+     width: 70px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     img{
+       height: 60px;
+       width: 60px;
+       border-radius: 50%;
+       border: 2px solid #B08652;
+     }
+   }
+   .col2{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      word-break:keep-all;/* 不换行 */
+      white-space:nowrap;/* 不换行 */
+      overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+      text-overflow:ellipsis;
+     .songName{
+       font-size: 18px;
+     }
+     .singerName{
+       font-size: 17px;
+       color: #675548;
+     }
+     .guanming{
+       font-size: 17px;
+       color: #675548;
+       word-break:keep-all;/* 不换行 */
+       white-space:nowrap;/* 不换行 */
+       overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+       text-overflow:ellipsis;
+       .guanmings{
+        color: #D9BC92;
+       }
+     }
+
+   }
+   .col3{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+  }
+}

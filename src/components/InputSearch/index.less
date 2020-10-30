@@ -1,0 +1,52 @@
+@bgColor: #0B0B15;
+@ctxBgColor: #0A0605;
+.search{
+  display: flex;
+  padding: 12px 6px;
+  background: #1C1913;
+  :global{
+   .ant-input-group{
+     background-color: @bgColor;
+     color: #D9BC92;
+   }
+   .ant-input-group .ant-input{
+     background-color: @bgColor;
+     color: #D9BC92;
+     border: 1px solid #9C8768;
+   }
+   .ant-input::placeholder{
+     color: #D9BC92;
+   }
+   .ant-input-group-addon{
+     background: linear-gradient(0deg, #745939 0%, #FFE1BE 100%);
+     color: #000000;
+   }
+   .ant-btn-primary{
+     background: linear-gradient(0deg, #745939 0%, #FFE1BE 100%);
+     color: #000000;
+     border: 1px solid #9C8768 !important;
+   }
+   .ant-btn{
+     height: 40px !important;
+   }
+  }
+  .searchInput{
+    flex: 1;
+    .serachBtn{
+    }
+  }
+  .btn{
+    width: 85px;
+    margin: 0 0px 0 10px;
+    height: 40px;
+    line-height: 40px;
+    background: linear-gradient(0deg, #745939 0%, #FFE1BE 100%);
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    font-family: PingFang SC;
+    font-weight: 400;
+  }
+
+}

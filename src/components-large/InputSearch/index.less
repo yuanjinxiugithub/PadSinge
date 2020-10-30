@@ -1,0 +1,63 @@
+@bgColor: #0B0B15;
+@ctxBgColor: #0A0605;
+.search{
+  display: flex;
+  padding: 20px 20px;
+  background: #1C1913;
+  :global{
+   .ant-input-group{
+     background-color: @bgColor;
+     color: #D9BC92;
+   }
+   .ant-input-group .ant-input{
+     background-color: @bgColor;
+     color: #D9BC92;
+     border: 1px solid #9C8768;
+     height: 55px;
+     line-height: normal;
+     font-size: 25px !important;
+   }
+   .ant-input::placeholder{
+     color: #D9BC92;
+     font-size: 24px;
+   }
+   .ant-input-group-addon{
+     background: linear-gradient(0deg, #745939 0%, #FFE1BE 100%);
+     color: #000000;
+   }
+   
+   .ant-btn-primary{
+     background: linear-gradient(0deg, #745939 0%, #FFE1BE 100%);
+     color: #000000;
+     border: 1px solid #bba27e !important;
+    
+   }
+   .ant-btn{
+     height: 55px !important;
+     font-size: 24px !important;
+     font-weight: 500 !important;
+   }
+   .ant-btn-primary-disabled, .ant-btn-primary.disabled, .ant-btn-primary[disabled], .ant-btn-primary-disabled:hover, .ant-btn-primary.disabled:hover, .ant-btn-primary[disabled]:hover, .ant-btn-primary-disabled:focus, .ant-btn-primary.disabled:focus, .ant-btn-primary[disabled]:focus, .ant-btn-primary-disabled:active, .ant-btn-primary.disabled:active, .ant-btn-primary[disabled]:active, .ant-btn-primary-disabled.active, .ant-btn-primary.disabled.active, .ant-btn-primary[disabled].active{
+     color: #000 !important;
+   }
+  }
+  .searchInput{
+    flex: 1;
+    .serachBtn{
+    }
+  }
+  .btn{
+    width: 120px;
+    margin: 0 0px 0 20px;
+    height: 55px;
+    line-height: 55px;
+    background: linear-gradient(0deg, #745939 0%, #FFE1BE 100%);
+    border-radius: 16px;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    font-family: PingFang SC;
+    font-weight: 500;
+  }
+
+}

@@ -1,0 +1,66 @@
+@bgColor: #0B0B15;
+@ctxBgColor: #0A0605;
+.page{
+  .content{
+    display: flex;
+    :global{
+      .am-pull-to-refresh-indicator{
+        display: none;
+      }
+    }
+    .left{
+      width: 110px;
+      height: ~'calc(100vh - 114px)';
+      overflow-y: scroll;
+      display: flex;
+      .typeDiv{
+        height: 60px;
+        line-height: 60px;
+        font-size: 17.5px;
+        color: #675548;
+        font-family: PingFang SC;
+        font-weight: 400;
+        padding-left: 10px;
+      }
+      .typeActived{
+        background: linear-gradient(0deg, #6A563D 0%, #DEBC92 100%);
+        color: #f7e2c5;
+      }
+      .line{
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(0deg, #0F0B0A 0%, #95753F 50%, #0F0B0A 100%);
+      }
+    }
+    .right{
+      flex: 1;
+      height: ~'calc(100vh - 114px)';
+      overflow-y: scroll;
+      display: flex;
+      .listView{
+        flex: 1;
+      }
+      .row{
+        color: #D9BC92;
+        display: flex;
+        padding: 7px 7px 7px 13px; 
+        display: flex;
+        align-items: center;
+        img{
+          width: 70px;
+          height: 70px;
+          border-radius: 6px;
+        }
+        .singerName{
+        font-size: 18px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #D9BC92;
+        margin-left: 13px;
+        }
+       }
+    }
+  }
+ 
+
+}

@@ -1,0 +1,121 @@
+@bgColor: #0B0B15;
+@ctxBgColor: #0A0605;
+.page{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  :global{
+    .am-pull-to-refresh-indicator{
+      display: none;
+    }
+  }
+ .buttonGroup{
+   display: flex;
+   padding: 10px 6px;
+   div{
+     flex: 1;
+     img{
+      width: 96%;
+      height: auto;
+     }
+   }
+ }
+
+ 
+ .list{
+   flex: 1;
+   overflow-y: scroll;
+   display: flex;
+ }
+
+ .listView{
+   flex: 1;
+   .row{
+    color: #D9BC92;
+    display: flex;
+    padding: 10px 10px;
+    width: 100vw;
+    .col1{
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 2px solid #B08652;
+      }
+    }
+    .col2{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      word-break:keep-all;/* 不换行 */
+      white-space:nowrap;/* 不换行 */
+      overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+      text-overflow:ellipsis;
+      .songName{
+        font-size: 18px;
+      }
+      .singerName{
+        font-size: 17px;
+        color: #675548;
+      }
+      .guanming{
+        font-size: 17px;
+        color: #675548;
+        word-break:keep-all;/* 不换行 */
+        white-space:nowrap;/* 不换行 */
+        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+        text-overflow:ellipsis;
+        .guanmings{
+         color: #D9BC92;
+        }
+      }
+
+    }
+    .col3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .orderBtn{
+        border-radius: 20px;
+        color: #D9BC92;
+        font-size: 17px;
+        font-weight: 400;
+        border: 1px solid #D9BC92;
+        padding: 0 17px;
+        text-align: center;
+        height: 38px;
+        line-height: 38px;
+      }
+    }
+   }
+ }
+
+ .scanDiv{
+   position: absolute;
+   width: 100%;
+   bottom: 10px;
+   text-align: center;
+   padding: 10px 0;
+   :global{
+    .ant-btn{
+      border-color: #745939;
+      height: 44px !important;
+    }
+   }
+   .scanBtn{
+    background: linear-gradient(0deg, #745939 0%, #FFE1BE 100%);
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #000000;
+    height: 44px;
+    padding: 0 20px;
+   }
+ }
+
+}

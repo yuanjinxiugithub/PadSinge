@@ -1,0 +1,135 @@
+@txtColor: #D9BC92;
+.page{
+  :global{
+    .ant-spin{
+      color: @txtColor;
+    }
+    .ant-spin-dot-item{
+      background-color: @txtColor;
+    }
+  }
+  .spinLoading{
+    z-index: 200;
+    position: absolute;
+    top: 36%;
+    left: 45%;
+  }
+  .history{
+     padding: 20px 20px ;
+     align-items: center;
+    .title{
+      font-size: 26px;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: #343434;
+      background: linear-gradient(180deg, #EBE3C8 0%, #967856 98.095703125%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      .txt{
+        flex: 1;
+      }
+    }
+
+    .hlist{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      .col{
+        font-size: 25px;
+        color: #D9BC92;
+        margin: 12px 15px;
+        padding: 10px 0;
+        background-color: #343434;
+        text-align: center;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .singerList{
+    border-bottom: 1px solid #41403f;
+    padding: 10px 20px;
+    color: @txtColor;
+    .singerItem{
+      display: flex;
+      margin: 6px 0 12px 0;
+      .image{
+        img{
+          width: 106px;
+          height: 106px;
+          border-radius: 14px;
+        }
+      }
+      .name{
+        flex: 1;
+        font-size: 26px;
+        margin-left: 26px;
+        display: flex;
+        align-items: center;
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+      }
+    }
+  }
+
+  .songList{
+    padding: 20px;
+    color: @txtColor;
+    .songItem{
+      display: flex;
+      margin: 10px 0 18px 0;
+      .image{
+        display: flex;
+        align-items: center;
+        img{
+          width: 106px;
+          height: 106px;
+          border-radius: 50%;
+        }
+      }
+      .name{
+        flex: 1;
+        font-size: 26px;
+        margin-left: 26px;
+        display: flex;
+        flex-direction: column;
+        word-break:keep-all;/* 不换行 */
+        white-space:nowrap;/* 不换行 */
+        overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+        text-overflow:ellipsis;
+        .singerName{
+          color: #675649;
+          font-size: 24px;
+        }
+        .guanming{
+          font-size: 24px;
+          color: #675548;
+          flex: 1;
+          word-break:keep-all;/* 不换行 */
+          white-space:nowrap;/* 不换行 */
+          overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+          text-overflow:ellipsis;
+          .boss{
+            color: @txtColor;
+          }
+        }
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .bottom{
+    height: 40px;
+    line-height: 40px;
+    color: gray;
+    font-size: 17px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "hash": true,
+    "html": {
+        "template": "./src/index.ejs"
+    },
+    "extraBabelPlugins": [
+        ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]
+    ],
+    "proxy": {
+        "/MAPI": {
+            "target": "https://m.ktvsky.com",
+            "changeOrigin": true,
+            "secure": true,   
+            "pathRewrite": { "^/MAPI" : "" }
+        },
+        "/PROD": {
+            "target": "https://login.16931.com/PROD",
+            "changeOrigin": true,
+            "secure": true,   
+            "pathRewrite": { "^/PROD" : "" }
+        },
+        "/KAPI": {
+            "target": "https://k.ktvsky.com",
+            "changeOrigin": true,
+            "secure": true,   
+            "pathRewrite": { "^/KAPI" : "" }
+        }
+    },
+    "copy": [
+        {
+            "from": "src/static",
+            "to": "./static"
+        }
+    ]
+}

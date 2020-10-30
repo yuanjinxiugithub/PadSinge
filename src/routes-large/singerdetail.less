@@ -1,0 +1,114 @@
+@bgColor: #0B0B15;
+@ctxBgColor: #0A0605;
+@txtColor: #D9BC92;
+.page{
+  display: flex;
+  flex-direction: column;
+  :global{
+    .am-pull-to-refresh-indicator{
+      display: none;
+    }
+  }
+  .tabs{
+    font-size: 26px;
+    font-weight: 400;
+    font-family: PingFang SC;
+    color: #D9BC92;
+    display: flex;
+    padding: 4px 35px;
+    height: 55px;
+    line-height: 55px;
+    margin-bottom: 15px;
+    .typeDiv{
+      flex: 1;
+      text-align: center;
+    }
+    .typeActived{
+      font-size: 26px;
+      font-weight: 500;
+      position: relative;
+    }
+    .typeActived:after{
+      position: absolute;
+      content: "";
+      height: 8px;
+      width: 60px;
+      background: linear-gradient(180deg, #EBE3C7, #967756);
+      border-radius: 5px;
+      bottom: -12px;
+      left: 39%;
+      transition: all 0.4s;
+
+    }
+  }
+  .list{
+    flex: 1;
+    display: flex;
+  }
+  .listView{
+    flex: 1;
+    .row{
+     color: #D9BC92;
+     display: flex;
+     padding: 10px 20px;
+     width: 100vw;
+     .col1{
+       width: 115px;
+       display: flex;
+       align-items: center;
+       img{
+         height: 100px;
+         width: 100px;
+         border-radius: 50%;
+         border: 2px solid #B08652;
+       }
+     }
+     .col2{
+       flex: 1;
+       display: flex;
+       flex-direction: column;
+       word-break:keep-all;/* 不换行 */
+       white-space:nowrap;/* 不换行 */
+       overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+       text-overflow:ellipsis;
+       .songName{
+         font-size: 26px;
+       }
+       .singerName{
+         font-size: 25px;
+         color: #675548;
+       }
+       .guanming{
+         font-size: 25px;
+         color: #675548;
+         flex: 1;
+         word-break:keep-all;/* 不换行 */
+         white-space:nowrap;/* 不换行 */
+         overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+         text-overflow:ellipsis;
+         .guanmings{
+          color: #D9BC92;
+         }
+       }
+ 
+     }
+     .col3{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       .orderBtn{
+         border-radius: 20px;
+         color: #D9BC92;
+         font-size: 17px;
+         font-weight: 400;
+         border: 1px solid #D9BC92;
+         padding: 0 17px;
+         text-align: center;
+         height: 38px;
+         line-height: 38px;
+       }
+     }
+    }
+  }
+ 
+}

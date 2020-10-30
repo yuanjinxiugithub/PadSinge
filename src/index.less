@@ -1,0 +1,62 @@
+html, body, :global(#root) {
+  touch-action: none;
+  height: 100%;
+  background-color: #f1f6fc;   
+  overflow:hidden;
+  //字体
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Roboto,Lato,sans-serif;     
+  //禁止文字被选中
+  -moz-user-select: none; -khtml-user-select: none; user-select: none;
+  //ant全局样式   
+  :global{
+    //modal
+    .ant-modal-mask {
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+    //button
+    .ant-btn{
+      height: 35px; //默认32
+    }    
+    //ant table
+    .ant-table-row, .ant-table-thead{
+      height: 35px; 
+    }
+    .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td{
+      padding: 5px 4px 0px 4px;
+    }    
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      padding: 5px 4px 0px 4px;
+    }    
+    .ant-empty-normal {
+      display: none;
+    }  
+    .am-pull-to-refresh-indicator{
+      display: none;
+    }
+    //字体大小
+    .ant-btn{
+      font-size: 18px;
+    }
+    .ant-drawer-body, body .ant-drawer-body{
+      padding: 0 2px;
+    }
+    .ant-drawer-title{
+      font-size: 18px;
+    }
+    .ant-modal-body{
+      font-size: 20px;
+    }
+    .ant-modal-title{
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+    }
+    
+  }
+}
+
+ul,li {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}

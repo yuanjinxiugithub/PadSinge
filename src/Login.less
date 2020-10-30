@@ -1,0 +1,210 @@
+.loginPage{      
+  width:100%;
+  height: 100vh;
+  -moz-background-size:100% 100%; 
+  background-size:100% 100%;
+  display: flex;    
+  justify-content: center;
+  overflow-y: auto;
+  :global{    
+    //FormItem
+    .ant-form-item {    
+      margin-bottom: 4px;  
+    }
+    .has-error .ant-form-explain, .has-error .ant-form-split {       
+      display: none;
+    }
+    .show-help-leave, .show-help-enter {
+      display: none;
+    }    
+    //input
+    .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+      border-color: transparent;     
+    } 
+    .ant-input-affix-wrapper .ant-input-prefix :not(.anticon), .ant-input-affix-wrapper .ant-input-suffix :not(.anticon) {    
+      width: 40px;
+      height: 35px;
+    }     
+  }
+  .top {
+    text-align: center;
+    .header {
+      height: 44px;
+      line-height: 44px;
+      a {
+        text-decoration: none;
+      }
+      .title {
+        position: relative;
+        top: 2px;
+        color: white;
+        font-weight: 600;
+        font-size: 33px;
+        font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+  .userLogin {        
+    display: flex;         
+    flex-direction: column; 
+    position: relative; 
+    .rePwDev{         
+      font-size: 13px;            
+      margin-bottom: 10px;
+      color: gray;
+      display: flex;
+      span{
+        cursor: pointer;
+      }    
+      .exitDiv{
+        flex: 1;
+        text-align: left;
+      } 
+      .resetDiv{
+        flex: 1;
+        text-align: right;
+      }     
+    } 
+    .userPanel{
+      flex: 1;
+      .loginTitle{
+        text-align: center;
+        font-size: 22px;
+      } 
+      .passForm{
+        padding-top: 20px;   
+        .user{
+          margin-bottom: 10px;
+        } 
+        .password{
+          margin-bottom: 12px;
+        }    
+        .loginBtn{
+          display: block;
+          width: 100%;
+        }                 
+      }                                  
+    }
+    .line{
+      width: 1px;
+      background-color: #dddddd;
+      margin: 0px 20px;
+    }  
+    .numPanel{     
+      .icon1{
+        position: absolute;
+        right: 0px;
+        top: -20px;
+        width: 50px;
+        cursor: pointer;
+      }
+      .numDiv{        
+        display: flex;
+        margin-bottom: 10px;
+        .numBtn{
+          flex: 1;
+          font-weight: bold;
+          margin-right: 5px;     
+
+          border: 1px solid #ddd;
+          border-radius: 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:hover{
+            border-color: #f0804e;
+          }
+
+          &:last-child{
+            margin-right: 0px;
+          }        
+        }                
+      }               
+    }        
+  }
+  .phoneUserLogin{
+    min-height: 540px;
+    :global{          
+      .ant-input-affix-wrapper .ant-input {       
+        font-size: 19px;
+      }
+      .ant-input-clear-icon {
+        font-size: 19px;
+      }
+    }
+  }
+  .padUserLogin{
+    min-height: 610px;
+    :global{
+      .ant-input-affix-wrapper {       
+        height: 60px;                
+      }     
+      .ant-input-affix-wrapper .ant-input {       
+        font-size: 20px;
+      }
+      .ant-input-clear-icon {
+        font-size: 20px;
+      }
+    }
+  }
+  .qrcodeLogin{    
+    display: flex;       
+    flex-direction: column;
+    position: relative;   
+    .qrcodePanel{
+      flex: 1;
+      .scanTitle{    
+        text-align: center;    
+        font-size: 22px;  
+      } 
+      .qrcodeDiv{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+      } 
+      .phoneQrcodeDiv{
+        padding-top: 80px;
+      }
+      .padQrcodeDiv{
+        padding-top: 100px;
+      }
+      .csInfoDiv{
+        text-align: center;
+        font-size: 14px;      
+      } 
+      .qrExitDiv{
+        text-align: center;
+        font-size: 13px;
+        // padding-top: 30px;
+        position: absolute;
+        bottom: 0px;
+        span{
+          cursor: pointer;
+        }  
+      }  
+      .icon2{
+        position: absolute;
+        right: 0px;
+        top: -20px;
+        width: 50px;
+        cursor: pointer;
+      } 
+    }          
+  }  
+  .phoneQrcodeLogin{
+    min-height: 540px;
+  }
+  .padQrcodeLogin{
+    min-height: 610px;
+  }
+}
+
+.curInputBox{
+  border:2px solid #e65d4d;
+  border-radius: 5px;
+}
+
+
+
+
+  

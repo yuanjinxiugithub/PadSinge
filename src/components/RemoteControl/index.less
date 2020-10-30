@@ -1,0 +1,103 @@
+@float-layout-timer: 300ms;
+.page{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  transition: visibility @float-layout-timer cubic-bezier(0.36, 0.66, 0.04, 1);
+  .mask{
+    flex: 1;
+    background-color: rgba(0,0,0,.8);
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+  }
+  .content{
+    bottom: 0;
+    padding: 10px 0;
+    background-image: url('@/assets/ctrBg@2x.png');
+    display: flex;
+    flex-direction: column;
+    transform: translate3d(0, 100%, 0);
+    transition: transform @float-layout-timer cubic-bezier(0.36, 0.66, 0.04, 1);
+    .operateCtr{
+      flex: 1;
+      .ctrRow1{
+        display: flex;
+        height: 130px;
+        line-height: 130px;
+        cursor: pointer;
+        div{
+          flex: 1;
+          text-align: center;
+          height: 80px;
+          line-height: 80px;
+            img{
+              width: 54px;
+            }
+            .bigImg{
+              width: 70px;
+            }
+            
+          .title{
+           height: 38px;
+           font-size: 18px;
+           font-family: PingFang SC;
+           font-weight: 400;
+           color: #DEDEDE;
+           line-height: 38px;
+          }
+        }
+      }
+     .ctrRow2{
+       display: flex;
+       height: 70px;
+       margin-top: 5px;
+       line-height: 70px;
+       cursor: pointer;
+       div{
+         flex: 1;
+         display: flex;
+         height: 50px;
+         line-height: 50px;
+         padding: 0 10px;
+         img{
+           width: 50px;
+         }
+         span{
+           font-size: 18px;
+           font-family: PingFang SC;
+           font-weight: 400;
+           color: #DEDEDE;
+           flex: 1;
+           text-align: center;
+         }
+       }
+      }
+   
+     }
+    .cancelCtr{
+     height: 50px;
+     line-height: 50px;
+     font-size: 20px;
+     font-family: PingFang SC;
+     font-weight: 400;
+     color: #666666;
+     text-align: center;
+     border-top: 1px solid rgba(255, 255, 255, 0.2);
+     }
+  }
+}
+.page_active{
+  visibility: visible;
+  .mask {
+    opacity: 1;
+  }
+  .content {
+    transform: translate3d(0, 0, 0);
+  }
+}
